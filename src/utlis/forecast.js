@@ -12,8 +12,9 @@ const forecast=(Latitude,Longitude,callback)=>{
                 weather_descriptions:body.current.weather_descriptions[0],
                 current_temperature:body.current.temperature,
                 feel_temperature:body.current.feelslike,
+                humidity:body.current.humidity,
             }
-            const str=`${data.weather_descriptions} , it is currently ${data.current_temperature}C out . It feels like ${data.feel_temperature}C out`;
+            const str=`${data.weather_descriptions} , it is currently ${data.current_temperature}C out . It feels like ${data.feel_temperature}C out and the humidity is ${humidity}%`;
             callback(undefined,str)
         }
     })
