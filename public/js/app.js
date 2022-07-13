@@ -17,7 +17,7 @@ weatherForm.addEventListener('submit',(event)=>{
         messageOne.textContent='Unable to find the location. Try another search';
         messagetwo.textContent='';
     }else{
-        const loc_url=`http://localhost:3000/weather?address=${location_data}`
+        const loc_url=`/weather?address=${location_data}`
         messageOne.textContent='Loading.....';
         messagetwo.textContent='';
         fetch(loc_url).then((response)=>{
