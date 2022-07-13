@@ -1,4 +1,4 @@
-console.log('Client Side Javscript file is loaded');
+
 
 
 const weatherForm=document.querySelector('form');
